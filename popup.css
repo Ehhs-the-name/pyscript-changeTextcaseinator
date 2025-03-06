@@ -1,5 +1,10 @@
-body {
-  width: 20rem;
-  height: 17rem;
-  background: orange;
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    background-color: rgba(217, 200, 224, 0.9);
+    min-width: 300px;
+}
+
+h3{
+    font-weight: 700;
 }
