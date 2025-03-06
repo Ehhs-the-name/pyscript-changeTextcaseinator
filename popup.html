@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>PyScript Demo 1</title>
+    <title>The Change Textcase-Inator</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <py-config>
@@ -16,26 +16,37 @@
     <script defer src="runtime/pyscript.js"></script>
   </head>
   <body>
-    <h2>Hello World!</h2>
-    <h4 id="datetime"></h4>
+    <h3>Your text, Mx.User ;)</h3>
 <!-- Python code below is intentionally left-aligned to utilise full width  -->
+<!-- Don't remember that note being there when I first dl'd this- would've been good to know 3 years ago! Anyway -->
+
+<!-- v Literally everything that needs to happen in the extension will happen here v -->
 <py-script>
-from js import document as popup  # DOM for this popup page
-from datetime import datetime
+l = ["lower", "low", "l", "lowercase"]
+u = ["upper", "up", "u", "uppercase"]
+t = ["title", "tit", "t", "titlecase"]
+s = ["sentence", "sent", "s", "sentencecase"]
 
-# Use print to update the popup
-print("This is the current date and time in ISO8601 format, courtesy of Python and PyScript.<br><br>")
-
-# Update an element in the popup directly
-insert_content = popup.getElementById('datetime')
-insert_content.innerHTML = f"<i>{datetime.now().isoformat()}</i>"
+print("----------")
+askOG = input()
+ask = askOG.lower()
+if ask in l:
+	text = input()
+	print(text.lower())
+elif ask in u:
+	text = input()
+	print(text.upper())
+elif ask in t:
+	text = input()
+	print(text.title())
+elif ask in s:
+    text = input()
+    con = text.lower()
+    fintext = con[0].upper()
+    print(fintext + con[1:])
+else:
+	print("--> Nothing given <--")
 </py-script>
-<py-repl>
-text = "This is a REPL session.<br>"
-text += "You can add several lines of Python<br>"
-text += "Then just press Shift-ENTER to run!"
-print(text.upper())
-</py-repl>
   </body>
 </html>
 
