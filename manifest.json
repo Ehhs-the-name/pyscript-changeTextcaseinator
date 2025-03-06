@@ -1,6 +1,6 @@
 {
-  "name": "PyScript Demo 1",
-  "description": "Build Chrome Extensions in Python/PyScript",
+  "name": "The Change Textcase-Inator! --  --  --  Answer 'S', 'L', 'U', or 'T', then paste the sentence that needs to be changed.",
+  "description": "Changes text case from lower to Upper, and upper to lower",
   "version": "1.0",
   "manifest_version": 3,
   "icons": {
